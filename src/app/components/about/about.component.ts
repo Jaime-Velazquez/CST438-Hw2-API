@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
   gettyImageUri:string;
   gettyResult:any;
   gifyResult:any;
-  gifyImageUri:stringl;
+  gifyImageUri:string;
 
   constructor(private imageApi: ImageapiService) { }
 
