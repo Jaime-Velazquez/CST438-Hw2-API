@@ -30,6 +30,7 @@ export class AboutComponent implements OnInit {
         }
       );
   }
+}
   
 interface GifyResult {
   data: GifyData;
@@ -52,6 +53,4 @@ interface Image {
 
 interface DisplaySize {
   uri:string;
-}
-
 }
