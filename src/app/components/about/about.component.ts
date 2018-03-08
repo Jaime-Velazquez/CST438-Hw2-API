@@ -36,7 +36,7 @@ interface GifyResult {
 }
 
 interface GifyData {
-  embedUrl:string,
+  embedUrl:string;
 }
 
 interface GettyResult {
