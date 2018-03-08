@@ -32,7 +32,7 @@ export class AboutComponent implements OnInit {
   }
   
 interface GifyResult {
-  data:
+  data: GifyData;
 }
 
 interface GifyData {
