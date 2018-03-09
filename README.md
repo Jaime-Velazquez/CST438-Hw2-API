@@ -1,6 +1,6 @@
 # Hw2api
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
+I used the gettyimage, giphy, and Wordnik api. My original intention was to have the wordnik api return a random word which would them be passed into the gettyimage api as the search parameter. However heroku was not allowing for the wordnik api to go through, even through it worked fine in c9. The theme is animals in general. If I had more time, I would make a standalone webpage starting from scratch and find out how to allow wordnik to pass in its json through heroku.
 
 ## Development server
 
