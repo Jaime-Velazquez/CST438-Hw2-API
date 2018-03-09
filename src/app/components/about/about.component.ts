@@ -12,11 +12,20 @@ export class AboutComponent implements OnInit {
   gettyResult:any;
   gifyResult:any;
   gifyImageUri:string;
+  wordnikResult:any;
+  wordnikWord:string;
 
   constructor(private imageApi: ImageapiService) { }
 
   ngOnInit() {
     const randomIndex = Math.floor((Math.random() * 30));
+    
+    this.imageApi.getWordnikWord().subscribe(
+      data => {
+        this.wordnikResult = data;
+        this.wordnikWord = this.wordnikResult.word;
+        }
+      );
     this.imageApi.getGettyImages().subscribe(
       data => {
         this.gettyResult = data;
@@ -30,6 +39,14 @@ export class AboutComponent implements OnInit {
         }
       );
   }
+}
+
+interface WordnikResult {
+  data: WordnikData;
+}
+
+interface WordnikData {
+  word:string;
 }
   
 interface GifyResult {
